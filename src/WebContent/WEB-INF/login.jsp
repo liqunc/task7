@@ -1,36 +1,70 @@
-<!-- /*
- * 08-600 Java and J2EE Programming
- * Homework #9
- * Anjal Patni
- * apatni
- * 9th December 2014
- */ -->
-
-<jsp:include page="template-top.jsp" />
-
-<p style="font-size:medium">
-	Please login below or click <a href="register.do">here</a> to register as a new user.
-</p>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 
 
-<p>
-	<form method="post" action="login.do">
-		<table>
-			<tr>
-				<td> E-mail Address: </td>
-				<td><input type="text" name="username" value="${form.username}"/></td>
-			</tr>
-			<tr>
-				<td> Password: </td>
-				<td><input type="password" name="password" value=""/></td>
-			</tr>
-			<tr>
-				<td colspan="2" align="center">
-					<input type="submit" name="button" value="Login"/>
-				</td>
-			</tr>
-		</table>
-	</form>
-</p>
+<jsp:include page="header.jsp" />
 
-<jsp:include page="template-bottom.jsp" />
+
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+	<h1 class="page-header">Matt Yang's Account</h1>
+
+
+	<div class="row placeholders">
+		<div class="table-responsive">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th style="text-align: center">Personal Information</th>
+					</tr>
+				</thead>
+				<tbody>
+
+					<tr>
+						<td>Address</td>
+						<td>6315 Forbes Avenue</td>
+					</tr>
+
+					<tr>
+						<td>Last Trading Date</td>
+						<td>January 3 2015</td>
+					</tr>
+
+					<tr>
+						<td>Cash Balance</td>
+						<td>$181790.02</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<hr />
+
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th style="text-align: center">Fund Name</th>
+						<th style="text-align: center">Share of Fund</th>
+					</tr>
+				</thead>
+				<tbody>
+
+					<tr>
+						<td>Fund A</td>
+						<td>120</td>
+					</tr>
+
+					<tr>
+						<td>Fund B</td>
+						<td>200</td>
+					</tr>
+
+					<tr>
+						<td>Fund C</td>
+						<td>350</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+	</div>
+
+</div>

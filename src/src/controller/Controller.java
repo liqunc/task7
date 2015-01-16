@@ -53,7 +53,7 @@ public class Controller extends HttpServlet {
 
         // System.out.println("servletPath="+servletPath+" requestURI="+request.getRequestURI()+"  user="+user);
 
-        if (action.equals("register.do") || action.equals("login.do") || action.equals("list.do") || action.equals("updateClickCount.do")) {
+        if (action.equals("register.do") || action.equals("login.do") || action.equals("index.do") || action.equals("updateClickCount.do")) {
         	// Allow these actions without logging in
 			return Action.perform(action,request);
         }
